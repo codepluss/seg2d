@@ -1,4 +1,4 @@
-from vtkplotter import *
+from vedo import *
 import numpy as np
 
 fname = 'imgdata/rawdata_stack13.tif'
@@ -34,4 +34,4 @@ for s in split_rng:
         if minsize< r <30:
             centers.append([cx,cy,10])
             
-show(split_rng, pic, Points(centers, c='w'),  axes=8,newPlotter=True)
+show(split_rng, pic, Points(centers, c='w'),  axes=8, new=True)
